@@ -1,0 +1,48 @@
+<nav class="navbar">
+  <div class="navbar__search">
+    <div *ngIf="isExpanded" class="navbar__search-back">
+      <button
+        type="button"
+        mat-icon-button
+        (click)="toggleDrawer()"
+        class="navbar__search-back-toggle"
+      >
+        <mat-icon>{{
+          isExpanded ? "keyboard_arrow_left" : "keyboard_arrow_right"
+        }}</mat-icon>
+      </button>
+    </div>
+    <div class="navbar__search-bar">
+      <mat-icon class="navbar__search-bar-icon">search</mat-icon>
+      <input
+        type="text"
+        class="navbar__search-bar-input"
+        placeholder="Buscar aquí"
+        (input)="onSearchInput($event)"
+        [matAutocomplete]="auto"
+      />
+
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let item of filteredItems" [value]="item.name" (click)="goRoute(item.url)">
+          <div >
+            {{ item.name }}
+          </div>
+        </mat-option>
+      </mat-autocomplete>
+    </div>
+  </div>
+  <div class="navbar__buttons">
+    <div class="navbar__buttons-item">
+      <img src="assets/finsuite/icons/nav/Setting.png" alt="img_setting" />
+    </div>
+    <div class="navbar__buttons-item">
+      <img src="assets/finsuite/icons/nav/Bell.png" alt="img_bell" />
+    </div>
+    <p class="navbar__buttons-item-name">Button Profile</p>
+  </div>
+</nav>
+<div class="navbarmobile">
+  <button class="navbarmobile__button" (click)="toggleDrawer()">
+    <mat-icon class="navbarmobile__button-menu">menu</mat-icon>
+  </button>
+</div>

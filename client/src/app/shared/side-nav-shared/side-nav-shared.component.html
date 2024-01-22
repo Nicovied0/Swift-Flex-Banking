@@ -1,0 +1,61 @@
+<div
+  class="mini__sidenav"
+  [ngClass]="{ 'mini__sidenav-expanded': isExpanded }"
+  *ngIf="!isExpanded"
+>
+  <div class="mini__sidenav-container">
+    <button
+      type="mini__sidenav-container-toggle"
+      mat-icon-button
+      (click)="toggleDrawer()"
+    >
+      <mat-icon class="mini__sidenav-container-expanded">{{
+        isExpanded ? "keyboard_arrow_left" : "keyboard_arrow_right"
+      }}</mat-icon>
+    </button>
+
+    <div *ngFor="let item of list" class="mini__sidenav-container-list">
+      <div
+        class="mini__sidenav-container-list-item"
+        (click)="navigateToTab(item.url)"
+      >
+        <img
+          [src]="'/assets/sidebarIcons/' + item.icon + '.svg'"
+          [alt]="item.icon"
+          matTooltip="{{ item.name }}"
+          matTooltipPosition="above"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sidenav" [ngClass]="{ sidenav__expanded: isExpanded }">
+  <div class="sidenav__box" [ngClass]="{ 'sidenav__box-expanded': isExpanded }">
+    <div class="sidenav__box-header">
+      <img
+        class="sidenav__box-header-logo"
+        src="assets/images/NO_TECHICON.png"
+        alt="logo"
+      />
+    </div>
+    <div class="sidenav__box-list">
+      <div *ngFor="let item of list">
+        <div
+          class="sidenav__box-list-item"
+          (click)="navigateToTab(item.url)"
+          matTooltip="{{ item.name }}"
+          matTooltipPosition="above"
+        >
+          <img
+            [src]="'/assets/sidebarIcons/' + item.icon + '.svg'"
+            class="sidenav__box-list-item-logo"
+          />
+          <p class="sidenav__box-list-item-text">
+            {{ item.name }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

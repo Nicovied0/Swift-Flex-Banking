@@ -1,0 +1,39 @@
+.pay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  white-space: nowrap;
+  gap: 1.25rem;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &-primary {
+      color: #cecece;
+      font-size: 1.25rem;
+      text-align: center;
+    }
+
+    &-add {
+      color: #252f69;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    &-logo {
+      font-size: .86338rem;
+      font-weight: 600;
+      letter-spacing: .024rem;
+      background: radial-gradient(428.45% 59.19% at 23.48% 47.62%, #33a3aa 0%, #80dee3 98.44%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+  }
+}
+// margin-top: 6rem;

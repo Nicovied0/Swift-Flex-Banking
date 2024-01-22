@@ -1,0 +1,36 @@
+<div class="operations" *ngIf="lastOperations">
+  <div class="operations__hedder">
+    <div class="operations__hedder-left">
+      <h2 class="operations__hedder-left-operations">Operaciones</h2>
+      <p class="operations__hedder-left-lastoperations">| Últimas realizadas</p>
+    </div>
+    <div class="operations__hedder-rigth">
+      <p class="operations__hedder-rigth-seemore" (click)="goOperations()">
+        Ver todas
+      </p>
+    </div>
+  </div>
+  <div class="operations__list">
+    <div class="operations__list-items" *ngFor="let item of lastOperations">
+      <div class="operations__list-items-left">
+        <p class="operations__list-items-left-concept">
+          {{ item.concept }}
+        </p>
+        <p class="operations__list-items-left-date">
+          {{ item.date | customDate }}
+        </p>
+      </div>
+      <div class="operations__list-items-rigth">
+        <p
+          class="operations__list-items-rigth-amount"
+          [ngClass]="{
+            'operations__list-items-rigth-amount-red':
+              item?.typeOfOperation === 'send'
+          }"
+        >
+          ${{ item?.amount }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

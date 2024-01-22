@@ -1,0 +1,84 @@
+@use '@angular/material'as mat;
+
+@include mat.core();
+
+
+$appChallenge-primary: mat.define-palette(mat.$indigo-palette);
+$appChallenge-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+$appChallenge-warn: mat.define-palette(mat.$red-palette);
+
+
+$appChallenge-theme: mat.define-light-theme((color: (primary: $appChallenge-primary,
+      accent: $appChallenge-accent,
+      warn: $appChallenge-warn,
+    )));
+
+
+@include mat.all-component-themes($appChallenge-theme);
+
+html,
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  min-height: 100vh;
+  font-family: 'Inter', 'roboto' !important;
+  scrollbar-color: #888 #eee;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+html,
+iframe,
+legend,
+li,
+ol,
+p,
+pre,
+textarea,
+ul {
+  border: 0;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #88888880;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+
+
+
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

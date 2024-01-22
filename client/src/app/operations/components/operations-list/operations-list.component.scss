@@ -1,0 +1,169 @@
+.operationList {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 2rem;
+
+
+  &__listHeader {
+    display: flex;
+    padding: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+
+    &-text {
+      color: #54617a;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: uppercase;
+      text-align: center;
+      transform: translate(7px);
+      cursor: pointer;
+      min-width: 100px;
+      padding: 0rem 16px;
+    }
+  }
+
+
+  &__listBody {
+    display: flex;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: space-between;
+
+    &-movile {
+      display: none;
+    }
+
+    &-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 100px;
+      padding: 1rem 16px;
+
+
+      &-text,
+      &-state {
+        font-size: .75rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        min-width: 100px;
+        text-align: center;
+      }
+
+      &-state {
+        color: rgb(142, 142, 161);
+
+        &-completed {
+          color: rgb(0, 163, 137);
+
+        }
+      }
+
+      &-textSecondary {
+        color: #8e8ea1;
+        font-size: .625rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        min-width: 100px;
+        text-align: center;
+      }
+
+      &-icon {
+        display: flex;
+        justify-content: center;
+        color: rgb(142, 142, 161);
+      }
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    &-numbers {
+      color: #848484;
+      font-size: .8125rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      padding-right: 1.69rem;
+
+    }
+  }
+
+  &__listBodyMovile {
+    display: none;
+
+    &-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0;
+      border-bottom: solid 1px #80808024;
+
+      &-text,
+      &-amount {
+        color: #000;
+        font-size: .875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+
+      &-textSecondary {
+        color: #848484;
+        font-size: .75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      &-amount {
+        color: rgb(0, 176, 70);
+      }
+    }
+  }
+
+}
+
+@media (max-width:950px) {
+  .operationList {
+    &__listHeader {
+      display: none;
+    }
+
+    &__pagination {
+      display: none;
+    }
+
+    &__listBody {
+      display: none;
+    }
+
+    &__listBodyMovile {
+      display: block;
+    }
+
+  }
+}
+
+.no-operations-message{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 2rem;
+}

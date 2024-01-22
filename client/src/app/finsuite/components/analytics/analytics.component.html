@@ -1,0 +1,36 @@
+<div class="analytics">
+  <div class="analytics__dates">
+    <div *ngFor="let item of analytics" class="analytics__dates-list">
+      <div class="analytics__dates-list-actualmount">
+        <p class="analytics__dates-list-actualmount-text">
+          Total {{ item.typename | analyticsType }}
+        </p>
+        <p class="analytics__dates-list-actualmount-textmount">
+          $ {{ item.mount | commaSeparator }}
+        </p>
+      </div>
+      <div class="analytics__dates-list-lastmount">
+        <p class="analytics__dates-list-lastmount-text">mes pasado</p>
+        <div class="analytics__dates-list-lastmount-box">
+          <img
+            src="assets/finsuite/icons/home/geenArrow.svg"
+            alt="greenArrow"
+            *ngIf="item.isIncrease"
+            class="analytics__dates-list-lastmount-box-img"
+          />
+          <img
+            src="assets/finsuite/icons/home/redArrow.svg"
+            alt="redArrow"
+            *ngIf="!item.isIncrease"
+            class="analytics__dates-list-lastmount-box-img"
+
+          />
+          <p class="analytics__dates-list-lastmount-box-value"
+          [ngClass]="{ 'analytics__dates-list-lastmount-box-value-red': !item.isIncrease }">
+            {{ item.percentageDifference | number : "1.2-2" }} %
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

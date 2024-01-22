@@ -1,0 +1,105 @@
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  &__form {
+    &-loginText {
+      margin: 2rem;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 36.31px;
+      text-align: center;
+    }
+
+    &-documentType,
+    &-pass,
+    &-documentNumber {
+      display: flex;
+      flex-direction: column;
+
+      &-label {
+        padding: 1rem 0;
+      }
+
+      &-matField {
+        &-input {
+          color: #dcdcdc;
+          background-color: transparent !important;
+        }
+      }
+
+      &-alert {
+        color: red;
+        font-size: medium;
+        font-weight: 400;
+      }
+    }
+
+    &-submit {
+      &-button {
+        width: 100%;
+        height: 42px;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 20px;
+        background-color: #005fbb;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__register {
+    margin: 2rem;
+
+    &-text {
+      color: #656565;
+      text-decoration: none;
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+
+  &__virtualKeyboard {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    cursor: pointer;
+
+    &-text {
+      margin: 0 0.5rem;
+      color: #cacaca;
+    }
+  }
+}
+
+:host ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+  height: 2.094rem;
+  width: min-content;
+  font-size: 0.75rem;
+  border-radius: 2.188rem;
+  color: #252f69;
+  background-color: transparent;
+  width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 460px) {
+  .loginForm {
+    padding: 1rem;
+    &__form {
+      &-loginText {
+        margin: 1rem 0;
+      }
+    }
+  }
+}

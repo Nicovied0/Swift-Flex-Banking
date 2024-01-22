@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  &__text {
+    font-size: 1.5625rem;
+    font-weight: 700;
+    line-height: .7;
+  }
+}
+
+@media (max-width: 950px) {
+  .header {
+    display: none;
+  }
+}

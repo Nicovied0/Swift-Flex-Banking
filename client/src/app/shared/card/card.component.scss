@@ -1,0 +1,89 @@
+.card {
+  width: 335px;
+  height: 196px;
+  border-radius: 12px;
+  background-color: #151718;
+  position: absolute;
+
+  &__logo {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+
+    &-img {
+      width: 44px;
+      height: 24px;
+    }
+  }
+
+  &__segurity-icon {
+    position: absolute;
+    width: 29.03px;
+    height: 29px;
+    top: 123.03px;
+    left: 258px;
+  }
+
+  &__data {
+    display: flex;
+
+    &-number {
+      position: absolute;
+      top: 125px;
+      left: 20px;
+      color: #BFBFBF;
+      font-size: 12px;
+      font-weight: 400px;
+      cursor: pointer;
+    }
+
+    &-disbledNuber {
+      color: #ECEFFF;
+      position: absolute;
+      top: 125px;
+      left: 150px;
+    }
+
+    &-cbu {
+      display: flex;
+      position: absolute;
+      color: #FFFFFF;
+      width: 94px;
+      height: 19px;
+      top: 164px;
+      left: 20px;
+      cursor: pointer;
+
+      &-share {
+        margin-right: 10px;
+      }
+    }
+
+
+  }
+
+}
+
+@media (max-width:420px) {
+  .card {
+    width: 270px;
+    height: 159px;
+
+    &__data {
+      &-cbu {
+        top: 131px;
+        left: 15px;
+
+      }
+
+      &-number {
+        top: 95px;
+      }
+    }
+
+    &__segurity-icon {
+      top: 78.03px;
+      left: 217px;
+    }
+  }
+}

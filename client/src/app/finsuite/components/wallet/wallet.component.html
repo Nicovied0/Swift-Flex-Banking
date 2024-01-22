@@ -1,0 +1,70 @@
+<div class="wallet">
+  <div class="wallet__hedder">
+    <div class="wallet__hedder-info">
+      <h2 class="wallet__hedder-name">Billetera</h2>
+      <p class="wallet__hedder-info-actualCard">
+        Tarjetas | {{ actualCard }} de {{ cardAmount }}
+      </p>
+    </div>
+    <div class="wallet__hedder-select">
+      <button
+        class="wallet__hedder-select-btnLeft"
+        (click)="previousCard()"
+        [ngClass]="{
+          'wallet__hedder-select-btnLeft-disabled': disabledButtonLeft
+        }"
+      >
+        <img src="assets/finsuite/icons/wallet/left.png" />
+      </button>
+
+      <button
+        (click)="nextCard()"
+        class="wallet__hedder-select-btnRigth"
+        [ngClass]="{
+          'wallet__hedder-select-btnRigth-disabled': disabledButtonRigth
+        }"
+      >
+        <img src="assets/finsuite/icons/wallet/rigth.png" />
+      </button>
+    </div>
+  </div>
+
+  <div [ngClass]="{ 'fade-out': isFadingOut, 'fade-in': !isFadingOut }">
+    <div [ngClass]="{ 'wallet__card-disabled': isToggleActive }">
+      <app-card
+        [card]="card"
+        [showCardInfo]="showCardInfo"
+        class="app-card"
+      ></app-card>
+    </div>
+
+    <div class="wallet__leftbox">
+      <div class="wallet__leftbox-container">
+        <div [ngClass]="{ 'fade-out': isFadingOut, 'fade-in': !isFadingOut }">
+          <div class="wallet__leftbox-balance">
+            <p class="wallet__leftbox-balance-text">Saldo</p>
+            <h2 class="wallet__leftbox-balance-amount">${{ card?.balance }}</h2>
+          </div>
+          <div class="wallet__leftbox-money">
+            <p class="wallet__leftbox-money-text">Moneda</p>
+            <h2 class="wallet__leftbox-money-name">
+              {{ card?.currency | moneyType }}
+            </h2>
+          </div>
+          <div class="wallet__leftbox-card">
+            <p *ngIf="!isToggleActive" class="wallet__leftbox-card-text">
+              Desactivar Tarjeta
+            </p>
+            <p *ngIf="isToggleActive" class="wallet__leftbox-card-text">
+              Activar Tarjeta
+            </p>
+            <mat-slide-toggle
+              class="wallet__leftbox-card-input"
+              [(ngModel)]="isToggleActive"
+            ></mat-slide-toggle>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="box">
+    <ul *ngFor="let item of cardsOptions" class="box__list">
+      <li (click)="goTo(item.url)" class="box__list-item">
+        <img
+          class="box__list-item-img"
+          [src]="'/assets/cards/headderIcons/' + item.icon + '.svg'"
+          [alt]="item.text + 'icon'"
+        />
+        <p class="box__list-item-text">{{ item.text }}</p>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,81 @@
+.boxHedder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 5px 0;
+
+  &__leftButtons {
+    display: flex;
+
+    &-all {
+
+      &-button,
+      &-button-actived {
+        border-radius: 12px;
+        border: none;
+        color: #54617a;
+        background-color: transparent;
+        padding: 0.7rem;
+        margin: 0 1rem 0 0;
+        cursor: pointer;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+
+      }
+
+      &-button:hover,
+      &-button-actived:hover {
+        background-color: #d5e0efab;
+      }
+
+      &-button:focus,
+      &-button-actived:focus {
+        background-color: #d5e0ef;
+      }
+
+      &-button-actived {
+        background-color: #d5e0ef;
+      }
+    }
+
+    &-cardsList {
+      &-item {
+        border-radius: 12px;
+        border: none;
+        color: #54617a;
+        background-color: transparent;
+        padding: 0.7rem;
+        margin: 0 1rem 0 0;
+        cursor: pointer;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+
+        &:hover {
+          background-color: #d5e0efab;
+        }
+
+        &:focus {
+          background-color: #d5e0ef;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:950px) {
+  .boxHedder {
+    align-items: stretch;
+    flex-direction: column;
+
+
+    &__leftButtons {
+      display: none;
+    }
+  }
+}

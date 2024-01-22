@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Inicio",
+    "icon": "inicio",
+    "url": "/"
+  },
+  {
+    "id": 2,
+    "name": "Tarjetas",
+    "icon": "tarjetas",
+    "url": "/cards"
+  },
+  {
+    "id": 3,
+    "name": "Préstamos",
+    "icon": "prestamos",
+    "url": "/loans"
+  },
+  {
+    "id": 4,
+    "name": "Pagar servicios",
+    "icon": "pagar_servicios",
+    "url": "/payServices"
+  },
+  {
+    "id": 5,
+    "name": "Operaciones",
+    "icon": "operaciones",
+    "url": "/operations"
+  },
+  {
+    "id": 6,
+    "name": "Te ofrecemos",
+    "icon": "ofrecemos",
+    "url": "/weOffer"
+  },
+  {
+    "id": 7,
+    "name": "Seguros",
+    "icon": "seguros",
+    "url": "/insurance"
+  },
+  {
+    "id": 8,
+    "name": "Puntos",
+    "icon": "puntos",
+    "url": "/points"
+  },
+  {
+    "id": 9,
+    "name": "Ayuda",
+    "icon": "ayuda",
+    "url": "/help"
+  },
+  {
+    "id": 10,
+    "name": "Cerrar sesión",
+    "icon": "cerrar_session",
+    "url": "/login"
+  }
+]

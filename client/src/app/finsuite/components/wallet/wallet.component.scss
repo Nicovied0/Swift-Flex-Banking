@@ -1,0 +1,85 @@
+.wallet {
+  background-color: #FFFFFF;
+  height: 278px;
+  top: 234px;
+  left: 306px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #eaeaea;
+
+  &__hedder {
+    display: flex;
+    align-items: flex-start;
+
+    &-info {
+      display: flex;
+      width: 200px;
+      align-items: center;
+      justify-content: space-between;
+
+      &-actualCard {
+        margin-left: 1rem;
+        width: 400;
+        font-size: 12px;
+        line-height: 14.52px;
+        color: #848484;
+      }
+    }
+
+    &-select {
+      display: flex;
+      margin-left: auto;
+
+      &-btnLeft,
+      &-btnRigth {
+        width: 32px;
+        height: 32px;
+        border-radius: 5px;
+        border: solid 1px rgb(12 12 12);
+        margin: 0 3px;
+        cursor: pointer;
+
+        &-disabled {
+          background-color: #ffffffba;
+          border: none;
+          cursor: default;
+        }
+      }
+
+    }
+  }
+
+  &__leftbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 25%;
+      padding: 0 2rem;
+    }
+  }
+
+  &__card {
+    &-disabled {
+      filter: opacity(0.5);
+      cursor: default !important;
+    }
+  }
+}
+
+@media (max-width:900px) {
+  .wallet__leftbox {
+    display: none;
+  }
+
+  .app-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+  }
+}

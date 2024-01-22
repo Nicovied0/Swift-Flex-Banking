@@ -1,0 +1,140 @@
+.balance {
+  background-color: #FFFFFF;
+  height: 317px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #eaeaea;
+
+  &__hedder {
+    display: flex;
+    align-items: flex-start;
+
+    &-info {
+      display: flex;
+      width: 182px;
+      align-items: center;
+      justify-content: space-between;
+
+      &-actualCard {
+        margin-left: 1rem;
+        width: 400;
+        font-size: 12px;
+        line-height: 14.52px;
+      }
+    }
+
+    &-select {
+      display: flex;
+      margin-left: auto;
+
+      &-btnLeft,
+      &-btnRigth {
+        width: 32px;
+        height: 32px;
+        border-radius: 5px;
+        border: 3px #7b7b7b9c;
+        margin: 0 3px;
+        background-color: #9999999c;
+        cursor: pointer;
+
+        &-disabled {
+          background-color: #ffffffba;
+          border: 1px #060606;
+        }
+      }
+
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style: none;
+
+    &-amount {
+      padding: 2rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      &-ul {
+        list-style: none;
+        padding: 0.3rem 0;
+        margin: 0;
+
+
+      }
+    }
+  }
+
+  &__bodyLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    &-chart {
+      width: 100%;
+    }
+
+    &-date {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      &-ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        &-li {
+          color: #8e8ea1;
+          font-family: Inter;
+          font-size: min(2.5vw, .75rem);
+          font-weight: 400;
+
+        }
+      }
+    }
+  }
+
+}
+
+:host ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+  height: 2.094rem;
+  width: min-content;
+  font-size: .75rem;
+  border-radius: 2.188rem;
+  color: #252f69;
+  background-color: #f5f5f5;
+}
+
+:host ::ng-deep .mdc-text-field--filled {
+  --mdc-filled-text-field-active-indicator-height: 0px;
+}
+
+:host ::ng-deep .mat-mdc-select-trigger {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+:host ::ng-deep .mat-mdc-select-value {
+  width: auto;
+}
+
+:host ::ng-deep .mdc-text-field--no-label:not(.mdc-text-field--outlined):not(.mdc-text-field--textarea) .mat-mdc-form-field-infix {
+  width: 8rem;
+}

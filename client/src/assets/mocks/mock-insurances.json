@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "text": "Hogar",
+    "icon": "home",
+    "url": "/cards"
+  },
+  {
+    "id": 2,
+    "text": "Bolso o cartera",
+    "icon": "purse",
+    "url": "/cards"
+  },
+  {
+    "id": 3,
+    "text": "Auto",
+    "icon": "car",
+    "url": "/cards"
+  },
+  {
+    "id": 4,
+    "text": "Celular",
+    "icon": "mobile",
+    "url": "/cards"
+  },
+  {
+    "id": 5,
+    "text": "Bicicleta",
+    "icon": "bike",
+    "url": "/cards"
+  }
+]

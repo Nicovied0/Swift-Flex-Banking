@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "text": "Hogar",
+    "icon": "home",
+    "url": "/"
+  },
+  {
+    "id": 2,
+    "text": "Tarjetas adicionales",
+    "icon": "wallet",
+    "url": "/cards"
+  },
+  {
+    "id": 3,
+    "text": "Ampliación línea crédito",
+    "icon": "credit",
+    "url": "/cards"
+  },
+  {
+    "id": 4,
+    "text": "Auto",
+    "icon": "car",
+    "url": "/cards"
+  }
+]

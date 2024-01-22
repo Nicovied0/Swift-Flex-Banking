@@ -1,0 +1,70 @@
+.preloader {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  border-radius: 100px;
+  border-bottom: #fafafa 3px solid;
+  border-top: transparent 3px solid;
+  border-left: #fafafa 3px solid;
+  border-right: transparent 3px solid;
+  padding: none;
+  -webkit-animation: spinny 1s infinite linear;
+  animation: spinny 1s infinite linear;
+}
+
+.preloader div {
+  border-radius: 90px;
+  border-bottom: #fafafa 3px solid;
+  border-top: transparent 3px solid;
+  border-left: transparent 3px solid;
+  border-right: #fafafa 3px solid;
+  width: 80px;
+  height: 80px;
+  margin: 7px;
+  display: block;
+  -webkit-animation: spinny-back 0.5s infinite linear;
+  animation: spinny-back 0.5s infinite linear;
+}
+
+@-webkit-keyframes spinny {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes spinny {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes spinny-back {
+  0% {
+    transform: rotate(359deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes spinny-back {
+  0% {
+    transform: rotate(359deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

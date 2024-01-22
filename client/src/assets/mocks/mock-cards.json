@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "nombre1",
+    "number": "1231232131322133",
+    "balance": "200210",
+    "currency": "Pesos Argentinos",
+    "disabled": false,
+    "alias": "User.alias"
+  },
+  {
+    "id": 2,
+    "name": "nombre1",
+    "number": "1231321312132133",
+    "balance": "200200",
+    "currency": "USD",
+    "disabled": false,
+    "alias": "User.alias1"
+  },
+  {
+    "id": 3,
+    "name": "nombre2",
+    "number": "1232131312132283",
+    "balance": "212001",
+    "currency": "Pesos Chilenos",
+    "disabled": false,
+    "alias": "User.alias2"
+  },
+  {
+    "id": 4,
+    "name": "nombre2",
+    "number": "1232132131213299",
+    "balance": "212300",
+    "currency": "EUR",
+    "disabled": false,
+    "alias": "User.alias3"
+  }
+]

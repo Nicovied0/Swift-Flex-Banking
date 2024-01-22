@@ -1,0 +1,69 @@
+<div class="cards">
+  <div class="cards__leftbox">
+    <div class="cards__leftbox-hedder">
+      <div class="cards__leftbox-hedder-info">
+        <h2 class="cards__leftbox-hedder-name">Tarjetas</h2>
+        <p class="cards__leftbox-hedder-info-actualCard">
+          Tarjetas | {{ actualCard }} de {{ cardAmount }}
+        </p>
+      </div>
+      <div class="cards__leftbox-hedder-select">
+        <button
+          class="cards__leftbox-hedder-select-btnLeft"
+          (click)="previousCard()"
+          [ngClass]="{
+            'wallet__leftbox-hedder-select-btnLeft-disabled': disabledButtonLeft
+          }"
+        >
+          <img src="assets/finsuite/icons/wallet/left.png" />
+        </button>
+
+        <button
+          (click)="nextCard()"
+          class="cards__leftbox-hedder-select-btnRigth"
+          [ngClass]="{
+            'wallet__leftbox-hedder-select-btnRigth-disabled':
+              disabledButtonRigth
+          }"
+        >
+          <img src="assets/finsuite/icons/wallet/rigth.png" />
+        </button>
+      </div>
+    </div>
+    <div class="cards__leftbox-card">
+      <div [ngClass]="{ 'fade-out': isFadingOut, 'fade-in': !isFadingOut }">
+        <app-card
+          [card]="card"
+          [showCardInfo]="showCardInfo"
+          class="cards__leftbox-card-app"
+        ></app-card>
+      </div>
+    </div>
+    <div class="cards__leftbox-footer">
+      <div class="cards__leftbox-footer-limit">
+        <p class="cards__leftbox-footer-limit-text">Limite</p>
+        <div class="cards__leftbox-footer-limit-amount">
+          <mat-progress-bar
+            [mode]="mode"
+            [value]="value"
+            [bufferValue]="bufferValue"
+            class="cards__leftbox-footer-limit-amount"
+          ></mat-progress-bar>
+        </div>
+        <div class="cards__leftbox-footer-limit-mountBox">
+          <p class="cards__leftbox-footer-limit-mountBox-text">$x / de $y</p>
+        </div>
+      </div>
+      <div class="cards__leftbox-footer-addCard">
+        <img src="/assets/cards/icons/Add.svg" alt="add.img" />
+        <p class="cards__leftbox-footer-addCard-text">Añadir nueva</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="vertical-divider"></div>
+
+  <div class="cards__rigthbox">
+    <h2>cardsLeft</h2>
+  </div>
+</div>

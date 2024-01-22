@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "mount": "19.8",
+    "type": "weekly"
+  },
+  {
+    "id": 2,
+    "mount": "17.0",
+    "type": "weekly"
+  },
+  {
+    "id": 3,
+    "mount": "14.2",
+    "type": "weekly"
+  },
+  {
+    "id": 4,
+    "mount": "11.4",
+    "type": "weekly"
+  },
+  {
+    "id": 5,
+    "mount": "8.6",
+    "type": "weekly"
+  },
+  {
+    "id": 6,
+    "mount": "17.1",
+    "type": "annual"
+  },
+  {
+    "id": 7,
+    "mount": "11",
+    "type": "annual"
+  },
+  {
+    "id": 8,
+    "mount": "5.0",
+    "type": "annual"
+  },
+  {
+    "id": 9,
+    "mount": "-1.1",
+    "type": "annual"
+  },
+  {
+    "id": 10,
+    "mount": "-7.2",
+    "type": "annual"
+  }
+]

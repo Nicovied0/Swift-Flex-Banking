@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "text": "Pagar tarjeta",
+    "icon": "PayCard",
+    "url": "/"
+  },
+  {
+    "id": 2,
+    "text": "Bloquear tarjeta",
+    "icon": "BlockCard",
+    "url": "/cards"
+  },
+  {
+    "id": 3,
+    "text": "Reemisión tarjeta",
+    "icon": "CardReissue",
+    "url": "/cards"
+  },
+  {
+    "id": 4,
+    "text": "Configuración",
+    "icon": "Configuration",
+    "url": "/cards"
+  }
+]

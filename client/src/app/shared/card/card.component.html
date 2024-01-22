@@ -1,0 +1,42 @@
+<div class="card" *ngIf="card">
+  <div class="card__logo">
+    <img
+      src="assets/finsuite/icons/wallet/visa.png"
+      class="card__logo-img"
+      alt="logo-img"
+    />
+  </div>
+
+  <div class="card__data">
+    <div (click)="toggleCard()">
+      <p *ngIf="!showCardNumber" class="card__data-number">Numero de tarjeta</p>
+      <p *ngIf="showCardNumber" class="card__data-number">
+        {{ cardNumber | cardNumber }}
+      </p>
+    </div>
+  </div>
+  <div class="card__data">
+    <div class="card__data-cbu">
+      <img
+        class="card__data-cbu-share"
+        src="assets/finsuite/icons/wallet/share.png"
+        alt="share-img"
+      />
+      <div (click)="toggleCbu()">
+        <p *ngIf="!showCBU" class="card__data-cbu-number">CBU/Alias</p>
+        <p *ngIf="showCBU" class="card__data-cbu-number">
+          {{ cbuNumber }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card__segurity">
+    <div class="card__segurity-icon">
+      <img
+        class="card__segurity-icon-img"
+        src="assets/finsuite/icons/wallet/segurity.png"
+        alt="code-segurity"
+      />
+    </div>
+  </div>
+</div>

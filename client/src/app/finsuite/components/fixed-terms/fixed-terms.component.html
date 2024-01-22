@@ -1,0 +1,31 @@
+<div class="fixedTerms" *ngIf="fixedTerms">
+  <div class="fixedTerms__hedder">
+    <div class="fixedTerms__hedder-left">
+      <h2 class="fixedTerms__hedder-left-fixedTerms">Plazo fijo</h2>
+      <p class="fixedTerms__hedder-left-lastfixedTerms">|</p>
+    </div>
+  </div>
+  <div class="fixedTerms__list">
+    <div class="fixedTerms__list-items" *ngFor="let item of fixedTerms">
+      <div class="fixedTerms__list-items-left">
+        <p class="fixedTerms__list-items-left-date">
+          {{ item.date | customDate }}
+        </p>
+      </div>
+      <div class="fixedTerms__list-items-mid">
+        <p class="fixedTerms__list-items-mid-amount">${{ item?.amount }}</p>
+      </div>
+      <div class="fixedTerms__list-items-rigth">
+        <i></i>
+        <p
+          class="fixedTerms__list-items-rigth-amount"
+          [ngClass]="{
+            'fixedTerms__list-items-rigth-amount-red': !item.positiveProfit
+          }"
+        >
+          {{ item.positiveProfit ? "\u2191" : "\u2193" }} {{ item?.profit }}%
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

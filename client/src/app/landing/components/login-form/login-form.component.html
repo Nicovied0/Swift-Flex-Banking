@@ -1,0 +1,82 @@
+<div class="loginForm">
+  <div class="loginForm__form">
+    <h2 class="loginForm__form-loginText">Iniciar sesión</h2>
+  </div>
+  <form class="loginForm__form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="loginForm__form-documentType">
+      <label class="loginForm__form-documentType-label">
+        Tipo de documento
+      </label>
+      <mat-form-field>
+        <mat-select
+          [formControl]="loginForm.get('documentType')"
+          class="loginForm__form-documentType-inputselect"
+        >
+          <mat-option value="DNI" class="DNI">DNI </mat-option>
+          <mat-option value="Pasaport">Pasaporte</mat-option>
+          <mat-option value="IdentityCard">Cédula de identidad</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <p
+        class="loginForm__form-documentType-alert"
+        *ngIf="showDocumentTypeError"
+      >
+        *El tipo de documento es requerido
+      </p>
+    </div>
+
+    <div class="loginForm__form-documentNumber">
+      <label class="loginForm__form-documentNumber-label">
+        Número de documento
+      </label>
+      <mat-form-field class="loginForm__form-documentNumber-matField" style="width: 100%;">
+        <input
+          matInput
+          class="loginForm__form-documentNumber-matField-input"
+          type="text"
+          [formControl]="loginForm.get('documentNumber')"
+          style="width: 100%;"
+        />
+      </mat-form-field>
+      <p
+        class="loginForm__form-documentNumber-alert"
+        *ngIf="showDocumentNumberError"
+      >
+        *El número de documento es requerido
+      </p>
+    </div>
+
+    <div class="loginForm__form-pass">
+      <label class="loginForm__form-pass--label"> Clave</label>
+      <mat-form-field class="loginForm__form-documentType-matField">
+        <input
+          matInput
+          class="loginForm__form-pass-input"
+          type="password"
+          [formControl]="loginForm.get('password')"
+        />
+      </mat-form-field>
+      <p class="loginForm__form-pass-alert" *ngIf="showPasswordError">
+        *La clave es requerida
+      </p>
+    </div>
+    <div class="loginForm__form-submit">
+      <button class="loginForm__form-submit-button" type="submit">
+        ingresar
+      </button>
+    </div>
+  </form>
+  <div class="loginForm__register">
+    <p class="loginForm__register-text" (click)="toggleRegister()">
+      ¿No tienes cuenta? Regístrate aquí
+    </p>
+  </div>
+  <div class="loginForm__virtualKeyboard">
+    <img
+      class="loginForm__virtualKeyboard-img"
+      src="assets/landing/login-keyboard.svg"
+      alt="keyboard-img"
+    />
+    <p class="loginForm__virtualKeyboard-text">Teclado virtual</p>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="investments" *ngIf="investements">
+  <div class="investments__hedder">
+    <div class="investments__hedder-left">
+      <h2 class="investments__hedder-left-investments">Inversiones</h2>
+      <p class="investments__hedder-left-lastinvestments">| Criptomonedas</p>
+    </div>
+  </div>
+  <div class="investments__list">
+    <div class="investments__list-items" *ngFor="let item of investements">
+      <div class="investments__list-items-box">
+        <div class="investments__list-items-box-image">
+          <img [src]="'/assets/finsuite/icons/home/' + item.icon + '.svg'" />
+        </div>
+        <div class="investments__list-items-box-left">
+          <p class="investments__list-items-box-left-concept">
+            {{ item.concept }}
+          </p>
+          <p class="investments__list-items-box-left-date">
+            {{ item.date | customDate }}
+          </p>
+        </div>
+      </div>
+      <div class="investments__list-items-rigth">
+        <p
+          class="investments__list-items-rigth-amount"
+          [ngClass]="{
+            'investments__list-items-rigth-amount-red':
+              item.typeOfOperation === 'send'
+          }"
+        >
+          {{ item.typeOfOperation === "send" ? "-" : "+" }} ${{ item?.amount }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "concept": "Prestamo Galicia",
+    "amount": "1,500.00",
+    "date": "2023-04-21T08:37:33.036Z",
+    "state": "completed",
+    "typeOfOperation": "received"
+  },
+  {
+    "id": 2,
+    "concept": "Préstamo galpón RRs",
+    "amount": "1,560.00",
+    "date": "2023-02-23T08:37:33.036Z",
+    "state": "completed",
+    "typeOfOperation": "received"
+  },
+  {
+    "id": 3,
+    "concept": "Prestamo SSa",
+    "amount": "1,700.00",
+    "date": "2023-08-21T08:34:33.036Z",
+    "state": "completed",
+    "typeOfOperation": "received"
+  },
+  {
+    "id": 4,
+    "concept": "Préstamo Santander Río",
+    "amount": "187,896.00",
+    "date": "2023-08-21T08:31:33.036Z",
+    "state": "completed",
+    "typeOfOperation": "received"
+  }
+]

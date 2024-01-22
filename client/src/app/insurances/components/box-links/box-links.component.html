@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="box">
+    <ul *ngFor="let insurance of insurances" class="box__list">
+      <li (click)="goTo(insurance.url)" class="box__list-item">
+        <img
+          class="box__list-item-img"
+          [src]="'/assets/insurance/' + insurance.icon + '.svg'"
+          [alt]="insurance.text + 'icon'"
+        />
+        <p class="box__list-item-text">{{ insurance.text }}</p>
+      </li>
+    </ul>
+  </div>
+</div>

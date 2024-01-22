@@ -1,0 +1,90 @@
+<div class="operationList">
+  <div class="operationList__listHeader">
+    <p class="operationList__listHeader-text">CONCEPTO</p>
+    <p class="operationList__listHeader-text">MONTO</p>
+    <p class="operationList__listHeader-text">FECHA</p>
+    <p class="operationList__listHeader-text">ESTADO</p>
+    <p class="operationList__listHeader-text">CUOTA</p>
+    <p class="operationList__listHeader-text">ACCIONES</p>
+  </div>
+
+  <div *ngIf="!hasOperations" class="no-operations-message">
+    No se encontraron operaciones.
+  </div>
+  <div
+    *ngFor="let operation of getCurrentPageOperations()"
+    class="operationList__listBody"
+  >
+    <div class="operationList__listBody-div">
+      <p class="operationList__listBody-div-text">
+        {{ operation.concept }}
+      </p>
+      <p class="operationList__listBody-div-textSecondary">Transferencia</p>
+    </div>
+    <div class="operationList__listBody-div">
+      <p class="operationList__listBody-div-text">${{ operation.amount }}</p>
+    </div>
+    <div class="operationList__listBody-div">
+      <p class="operationList__listBody-div-text">
+        {{ operation.date | customDate }}
+      </p>
+      <p class="operationList__listBody-div-textSecondary">
+        {{ operation.date | customDateHour }}
+      </p>
+    </div>
+    <div class="operationList__listBody-div">
+      <p
+        class="operationList__listBody-div-state"
+        [ngClass]="{
+          'operationList__listBody-div-state-completed': isCompletedState(
+            operation.state
+          )
+        }"
+      >
+        {{ operation.state }}
+      </p>
+    </div>
+
+    <div class="operationList__listBody-div">
+      <p class="operationList__listBody-div-text">{{ operation.share }}</p>
+    </div>
+    <div class="operationList__listBody-div">
+      <mat-icon class="operationList__listBody-div-icon">more_horiz</mat-icon>
+    </div>
+  </div>
+
+  <div
+    *ngFor="let operation of operations"
+    class="operationList__listBodyMovile"
+  >
+    <div class="operationList__listBodyMovile-div">
+      <div>
+        <p class="operationList__listBodyMovile-div-text">
+          {{ operation.concept }}
+        </p>
+        <p class="operationList__listBodyMovile-div-textSecondary">
+          {{ operation.date | customDate }} a
+          {{ operation.date | customDateHour }}
+        </p>
+      </div>
+      <div>
+        <p class="operationList__listBodyMovile-div-text">
+          ${{ operation.amount }}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="operationList__pagination">
+    <p class="operationList__pagination-numbers">
+      {{ getRangeEnd() }} -
+      {{ operations.length }}
+    </p>
+    <app-pagination
+      [currentPage]="currentPage"
+      [itemsPerPage]="itemsPerPage"
+      [totalItems]="operations.length"
+      (pageChange)="onPageChange($event)"
+    ></app-pagination>
+  </div>
+</div>

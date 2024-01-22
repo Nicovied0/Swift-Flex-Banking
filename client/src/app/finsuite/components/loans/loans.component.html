@@ -1,0 +1,28 @@
+<div class="loans" *ngIf="lastLoans">
+  <div class="loans__hedder">
+    <div class="loans__hedder-left">
+      <h2 class="loans__hedder-left-loans">Préstamos</h2>
+      <p class="loans__hedder-left-lastloans">|</p>
+    </div>
+    <div class="loans__hedder-rigth">
+      <p class="loans__hedder-rigth-seemore" (click)="goLoans()">
+        Ver todos
+      </p>
+    </div>
+  </div>
+  <div class="loans__list">
+    <div class="loans__list-items" *ngFor="let item of lastLoans">
+      <div class="loans__list-items-left">
+        <p class="loans__list-items-left-concept">
+          {{ item.concept }}
+        </p>
+        <p class="loans__list-items-left-date">
+          {{ item.date | customDate }}
+        </p>
+      </div>
+      <div class="loans__list-items-rigth">
+        <p class="loans__list-items-rigth-amount">${{ item?.amount }}</p>
+      </div>
+    </div>
+  </div>
+</div>

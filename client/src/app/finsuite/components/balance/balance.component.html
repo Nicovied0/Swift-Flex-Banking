@@ -1,0 +1,65 @@
+<div class="balance">
+  <div class="balance__hedder">
+    <div class="balance__hedder-info">
+      <h2 class="balance__hedder-name">Balance</h2>
+      <mat-icon></mat-icon>
+    </div>
+    <div class="balance__hedder-select">
+      <div class="balance__hedder-select-box">
+        <mat-form-field class="balance__hedder-select-box-mat">
+          <mat-select
+            matNativeControl
+            required
+            [(ngModel)]="selectedValue"
+            class="balance__hedder-select-box-matselect"
+            (selectionChange)="filterBalances()"
+          >
+            <mat-option
+              class="balance__hedder-select-box-matselect-option"
+              value="weekly"
+              >Semanal</mat-option
+            >
+            <mat-option
+              class="balance__hedder-select-box-matselect-option"
+              value="annual"
+              >Anual</mat-option
+            >
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="balance__body">
+    <!-- <div class="balance__body-amount">
+      <ul
+        class="balance__body-amount-ul"
+        *ngFor="let balanceLateral of amountfilteredBalances"
+      >
+        <li class="balance__body-amount-ul-li">{{ balanceLateral.mount }}K</li>
+      </ul>
+    </div> -->
+    <div class="balance__bodyLeft">
+      <div class="balance__bodyLeft-chart">
+        <app-ng-chart
+          [selectedValue]="selectedValue"
+          [amountFiltered]="amountFiltered"
+          [xAxisFiltered]="xAxisFiltered"
+        ></app-ng-chart>
+      </div>
+      <!-- <div class="balance__bodyLeft">
+        <div class="balance__bodyLeft-date">
+            <ul
+              class="balance__bodyLeft-date-ul"
+              *ngFor="let datebalanceLateral of datefilteredBalances"
+            >
+              <li class="balance__bodyLeft-date-ul-li">
+                {{ datebalanceLateral.date }}
+              </li>
+            </ul>
+
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>

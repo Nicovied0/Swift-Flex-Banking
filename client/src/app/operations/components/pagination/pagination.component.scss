@@ -1,0 +1,38 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  &__button {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+    border: 1px solid #f1f1f1;
+    background-color: white;
+    cursor: pointer;
+
+
+    &:active {
+      background-color: #56a0c9 !important;
+      color: white;
+    }
+
+    &-disabled {
+      cursor: default;
+      background: aliceblue;
+    }
+
+    &-number {
+      background-color: #56a0c9 !important;
+      color: white;
+    }
+  }
+
+}

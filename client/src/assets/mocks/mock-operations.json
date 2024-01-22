@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "concept": "Spotify",
+    "amount": "135.49",
+    "date": "2023-04-21T08:37:33.036Z",
+    "state": "completed",
+    "typeOfOperation": "received",
+    "share": "2/12"
+  },
+  {
+    "id": 2,
+    "concept": "Nike",
+    "amount": "75.00",
+    "date": "2023-02-23T08:37:33.036Z",
+    "state": "completed",
+    "typeOfOperation": "send",
+    "share": "2/12"
+  },
+  {
+    "id": 3,
+    "concept": "Netflix",
+    "amount": "15.49",
+    "date": "2023-08-21T08:34:33.036Z",
+    "state": "completed",
+    "typeOfOperation": "send",
+    "share": "5/12"
+  },
+  {
+    "id": 4,
+    "concept": "Spotify",
+    "amount": "135.49",
+    "date": "2023-08-21T08:31:33.036Z",
+    "state": "inProcess",
+    "typeOfOperation": "received",
+    "share": "5/12"
+  },
+  {
+    "id": 5,
+    "concept": "Nike",
+    "amount": "75.00",
+    "date": "2023-08-22T08:37:33.036Z",
+    "state": "completed",
+    "typeOfOperation": "send",
+    "share": "8/12"
+  },
+  {
+    "id": 6,
+    "concept": "Apple",
+    "amount": "299.99",
+    "date": "2023-08-25T09:15:00.036Z",
+    "state": "inProcess",
+    "typeOfOperation": "received",
+    "share": "11/12"
+  },
+  {
+    "id": 7,
+    "concept": "Amazon",
+    "amount": "50.25",
+    "date": "2023-08-20T14:45:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "send",
+    "share": "12/12"
+  },
+  {
+    "id": 8,
+    "concept": "Uber",
+    "amount": "20.00",
+    "date": "2023-08-23T18:30:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "send",
+    "share": "2/12"
+  },
+  {
+    "id": 9,
+    "concept": "Google",
+    "amount": "500.00",
+    "date": "2023-08-25T12:00:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "received",
+    "share": "2/12"
+  },
+  {
+    "id": 10,
+    "concept": "Adidas",
+    "amount": "99.95",
+    "date": "2023-08-21T16:30:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "send",
+    "share": "2/12"
+  },
+  {
+    "id": 11,
+    "concept": "Microsoft",
+    "amount": "399.00",
+    "date": "2023-08-24T11:45:00.036Z",
+    "state": "inProcess",
+    "typeOfOperation": "received",
+    "share": "6/12"
+  },
+  {
+    "id": 12,
+    "concept": "Starbucks",
+    "amount": "5.75",
+    "date": "2023-08-23T08:00:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "send",
+    "share": "7/12"
+  },
+  {
+    "id": 13,
+    "concept": "Amazon",
+    "amount": "150.00",
+    "date": "2023-08-21T19:30:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "received",
+    "share": "7/12"
+  },
+  {
+    "id": 14,
+    "concept": "McDonald's",
+    "amount": "8.50",
+    "date": "2023-08-22T12:15:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "send",
+    "share": "3/12"
+  },
+  {
+    "id": 15,
+    "concept": "Netflix",
+    "amount": "12.99",
+    "date": "2023-08-23T09:30:00.036Z",
+    "state": "inProcess",
+    "typeOfOperation": "received",
+    "share": "12/12"
+  },
+  {
+    "id": 16,
+    "concept": "Apple",
+    "amount": "449.00",
+    "date": "2023-08-25T14:20:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "send",
+    "share": "10/12"
+  },
+  {
+    "id": 17,
+    "concept": "Amazon",
+    "amount": "27.75",
+    "date": "2023-08-24T17:10:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "send",
+    "share": "8/12"
+  },
+  {
+    "id": 18,
+    "concept": "Nike",
+    "amount": "65.00",
+    "date": "2023-08-23T20:00:00.036Z",
+    "state": "inProcess",
+    "typeOfOperation": "received",
+    "share": "8/12"
+  },
+  {
+    "id": 19,
+    "concept": "Google",
+    "amount": "799.00",
+    "date": "2023-08-21T10:30:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "received",
+    "share": "9/12"
+  },
+  {
+    "id": 20,
+    "concept": "Starbucks",
+    "amount": "4.25",
+    "date": "2023-08-24T15:45:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "send",
+    "share": "2/12"
+  },
+  {
+    "id": 21,
+    "concept": "Nike",
+    "amount": "89.00",
+    "date": "2023-08-22T18:30:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "send",
+    "share": "5/5"
+  },
+  {
+    "id": 22,
+    "concept": "Microsoft",
+    "amount": "599.00",
+    "date": "2023-08-23T12:30:00.036Z",
+    "state": "inProcess",
+    "typeOfOperation": "received",
+    "share": "3/5"
+  },
+  {
+    "id": 23,
+    "concept": "Amazon",
+    "amount": "120.00",
+    "date": "2023-08-25T08:15:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "send",
+    "share": "2/3"
+  },
+  {
+    "id": 24,
+    "concept": "Starbucks",
+    "amount": "6.50",
+    "date": "2023-08-21T13:00:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "received",
+    "share": "2/3"
+  },
+  {
+    "id": 25,
+    "concept": "Adidas",
+    "amount": "120.00",
+    "date": "2023-08-23T17:45:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "send",
+    "share": "2/3"
+  },
+  {
+    "id": 26,
+    "concept": "Netflix",
+    "amount": "9.99",
+    "date": "2023-08-24T11:30:00.036Z",
+    "state": "inProcess",
+    "typeOfOperation": "send",
+    "share": "2/3"
+  },
+  {
+    "id": 27,
+    "concept": "Apple",
+    "amount": "599.00",
+    "date": "2023-08-23T14:00:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "received",
+    "share": "1/3"
+  },
+  {
+    "id": 28,
+    "concept": "Amazon",
+    "amount": "75.50",
+    "date": "2023-08-25T16:45:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "send",
+    "share": "2/3"
+  },
+  {
+    "id": 29,
+    "concept": "Google",
+    "amount": "350.00",
+    "date": "2023-08-22T09:00:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "received",
+    "share": "10/24"
+  },
+  {
+    "id": 30,
+    "concept": "Nike",
+    "amount": "100.00",
+    "date": "2023-08-24T13:15:00.036Z",
+    "state": "inProcess",
+    "typeOfOperation": "send",
+    "share": "11/12"
+  },
+  {
+    "id": 31,
+    "concept": "Microsoft",
+    "amount": "699.00",
+    "date": "2023-08-21T15:30:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "received",
+    "share": "3/3"
+  },
+  {
+    "id": 32,
+    "concept": "Starbucks",
+    "amount": "3.75",
+    "date": "2023-08-22T12:45:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "send",
+    "share": "2/3"
+  },
+  {
+    "id": 33,
+    "concept": "Amazon",
+    "amount": "90.00",
+    "date": "2023-08-24T14:30:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "send",
+    "share": "2/3"
+  },
+  {
+    "id": 34,
+    "concept": "Adidas",
+    "amount": "149.00",
+    "date": "2023-08-25T09:45:00.036Z",
+    "state": "inProcess",
+    "typeOfOperation": "received",
+    "share": "6/8"
+  },
+  {
+    "id": 35,
+    "concept": "Google",
+    "amount": "249.00",
+    "date": "2023-08-23T11:15:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "received",
+    "share": "2/5"
+  },
+  {
+    "id": 36,
+    "concept": "Netflix",
+    "amount": "8.49",
+    "date": "2023-08-21T16:30:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "send",
+    "share": "2/12"
+  },
+  {
+    "id": 37,
+    "concept": "Apple",
+    "amount": "799.00",
+    "date": "2023-08-22T10:00:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "received",
+    "share": "6/12"
+  },
+  {
+    "id": 38,
+    "concept": "Amazon",
+    "amount": "42.75",
+    "date": "2023-08-24T09:15:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "send",
+    "share": "4/5"
+  },
+  {
+    "id": 39,
+    "concept": "Nike",
+    "amount": "55.00",
+    "date": "2023-08-25T07:30:00.036Z",
+    "state": "inProcess",
+    "typeOfOperation": "received",
+    "share": "2/8"
+  },
+  {
+    "id": 40,
+    "concept": "Microsoft",
+    "amount": "299.00",
+    "date": "2023-08-23T13:00:00.036Z",
+    "state": "completed",
+    "typeOfOperation": "send",
+    "share": "2/3"
+  }
+]

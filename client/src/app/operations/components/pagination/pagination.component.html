@@ -1,0 +1,47 @@
+<div class="pagination">
+  <button
+    (click)="goToPage(1)"
+    [disabled]="currentPage === 1"
+    class="pagination__button"
+    [ngClass]="{ 'pagination__button-disabled': currentPage === 1 }"
+  >
+    <img src="/assets/operations/First.svg" />
+  </button>
+  <button
+    (click)="changePage(-1)"
+    [disabled]="currentPage === 1"
+    class="pagination__button"
+    [ngClass]="{ 'pagination__button-disabled': currentPage === 1 }"
+  >
+    <img src="/assets/operations/Prev.svg" />
+  </button>
+  <button
+    *ngFor="let pageNumber of getPageNumbers()"
+    (click)="goToPage(pageNumber)"
+    [disabled]="currentPage === pageNumber"
+    class="pagination__button"
+    [ngClass]="{ 'pagination__button-number': currentPage === pageNumber }"
+  >
+    {{ pageNumber }}
+  </button>
+  <button
+    (click)="changePage(1)"
+    [disabled]="currentPage * itemsPerPage >= totalItems"
+    [ngClass]="{
+      'pagination__button-disabled': currentPage * itemsPerPage >= totalItems
+    }"
+    class="pagination__button"
+  >
+    <img src="/assets/operations/Next.svg" />
+  </button> 
+  <button
+    (click)="goToPage(getLastPage())"
+    [disabled]="currentPage * itemsPerPage >= totalItems"
+    [ngClass]="{
+      'pagination__button-disabled': currentPage * itemsPerPage >= totalItems
+    }"
+    class="pagination__button"
+  >
+    <img src="/assets/operations/Last.svg" />
+  </button>
+</div>

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "typename": "profits",
+    "lastmont": "5000.60",
+    "mount": "5500.60"
+  },
+  {
+    "id": 2,
+    "typename": "exprenses",
+    "lastmont": "33.50",
+    "mount": "32.30"
+  },
+  {
+    "id": 3,
+    "typename": "saving",
+    "lastmont": "626",
+    "mount": "1000.87"
+  }
+]

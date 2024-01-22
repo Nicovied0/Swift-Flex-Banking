@@ -1,0 +1,53 @@
+.home {
+
+  &__conteiner {
+    display: flex;
+
+    &-sidenavbar {
+      position: sticky;
+      height: 100vh;
+      top: 0px;
+      color: #fff;
+    }
+
+    &-body {
+      padding: 0 3rem;
+      width: 100%;
+
+      &-content {
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .home {
+    &__conteiner {
+      &-body {
+        padding: 0 1rem;
+        margin-top: 7rem;
+
+        &-content {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1150px) {
+  .home {
+    &__conteiner {
+      &-body {
+        &-content {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+

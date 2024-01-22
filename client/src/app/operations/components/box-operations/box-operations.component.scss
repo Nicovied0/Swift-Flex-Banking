@@ -1,0 +1,22 @@
+.boxOperations {
+  background-color: white;
+  border-radius: 12px;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  padding: 1rem;
+
+  &__header {
+    margin-bottom: 1rem;
+  }
+
+}
+
+@media (max-width:950px) {
+  .boxOperations {
+    margin-top: 3rem;
+  }
+}
+
+
+
+

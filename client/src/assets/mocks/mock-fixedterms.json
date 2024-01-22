@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "amount": "1,000.00",
+    "date": "2023-08-21T08:31:33.036Z",
+    "profit": "0,7",
+    "positiveProfit": true
+  },
+  {
+    "id": 2,
+    "amount": "20.00",
+    "date": "2023-08-18T08:31:33.036Z",
+    "profit": "0",
+    "positiveProfit": false
+  },
+  {
+    "id": 3,
+    "amount": "14,000.00",
+    "date": "2023-08-21T08:31:33.036Z",
+    "profit": " 2,3",
+    "positiveProfit": true
+  },
+  {
+    "id": 4,
+    "amount": "4,000.00",
+    "date": "2023-03-21T08:31:33.036Z",
+    "profit": "0,5",
+    "positiveProfit": true
+  }
+]

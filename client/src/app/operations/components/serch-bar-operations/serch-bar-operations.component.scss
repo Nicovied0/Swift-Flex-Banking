@@ -1,0 +1,31 @@
+.searchBar {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  min-width: 303px;
+  width: 100%;
+  height: 40px;
+  border-radius: 12px;
+  background: #f9f9fa;
+  position: relative;
+  color: #9C9D9D;
+
+  &__icon {
+    position: absolute;
+    left: 10px;
+  }
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    padding-left: 40px;
+    color: #9C9D9D;
+
+  }
+
+  &__input:focus {
+    background-color: transparent;
+    outline: none;
+    color: #9C9D9D;
+  }
+}
